@@ -16,7 +16,7 @@ const AllCars = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const res = await axios.get("http://localhost:1000/api/v1/car/get-all-cars");
+      const res = await axios.get("https://cars-fp5h.onrender.com/api/v1/car/get-all-cars");
       setData(res.data.data);
     };
     fetch();

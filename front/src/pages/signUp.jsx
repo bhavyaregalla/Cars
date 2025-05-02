@@ -17,7 +17,7 @@ const signUp = () => {
     try {
         console.log(Values);
         const res = await axios.post(
-          "http://localhost:1000/api/v1/sign-up",
+          "https://cars-fp5h.onrender.com/api/v1/sign-up",
           Values
         );
         alert(res.data.message);

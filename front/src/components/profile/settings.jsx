@@ -34,7 +34,7 @@ const Settings = () => {
   useEffect(() => {
     const fetch = async () => {
       const res = await axios.get(
-        "http://localhost:1000/api/v1/user/get-user-info",
+        "https://cars-fp5h.onrender.com/api/v1/user/get-user-info",
         { headers }
       );
       setProfile(res.data);
@@ -45,7 +45,7 @@ const Settings = () => {
 
   const handleName = async () => {
     const res = await axios.put(
-      "http://localhost:1000/api/v1/user/update-username",
+      "https://cars-fp5h.onrender.com//api/v1/user/update-username",
       uName,
       { headers }
     );
@@ -63,7 +63,7 @@ const Settings = () => {
       return;
     }
     const res = await axios.put(
-      "http://localhost:1000/api/v1/user/update-password",
+      "https://cars-fp5h.onrender.com/api/v1/user/update-password",
       uPassword,
       { headers }
     );

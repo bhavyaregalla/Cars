@@ -16,7 +16,7 @@ const RecentCars = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const res = await axios.get("http://localhost:1000/api/v1/car/get-recent-cars");
+      const res = await axios.get("https://cars-fp5h.onrender.com/api/v1/car/get-recent-cars");
       setData(res.data.data);
       setFilteredData(res.data.data); // Initialize filtered data with all cars
     };

@@ -23,7 +23,7 @@ const LogIn = () => {
         alert("All fields are required");
       } else {
         const res = await axios.post(
-          "http://localhost:1000/api/v1/user/sign-in",
+          "https://cars-fp5h.onrender.com/api/v1/user/sign-in",
           Values
         );
         if(res.status == 400){

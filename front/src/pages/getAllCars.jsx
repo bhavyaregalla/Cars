@@ -18,7 +18,7 @@ const GetAllCars = () => {
     const fetch = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1000/api/v1/car/get-all-cars",
+          "https://cars-fp5h.onrender.com/api/v1/car/get-all-cars",
           { headers }
         );
         setCars(res.data.data); // Set cars data

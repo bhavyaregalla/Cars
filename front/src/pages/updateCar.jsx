@@ -65,7 +65,7 @@ const UpdateCar = () => {
     const fetch = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:1000/api/v1/car/get-car-by-id/${id}`
+          `https://cars-fp5h.onrender.com/api/v1/car/get-car-by-id/${id}`
         );
         setData(res.data.data);
       } catch (e) {
@@ -93,7 +93,7 @@ const UpdateCar = () => {
       }
 
       const res = await axios.put(
-        `http://localhost:1000/api/v1/car/update-car/${id}`,
+        `https://cars-fp5h.onrender.com/api/v1/car/update-car/${id}`,
         data,
         { headers }
       );

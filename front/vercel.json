@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "http://localhost:1000/api/$1"
+      "destination": "https://cars-fp5h.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",

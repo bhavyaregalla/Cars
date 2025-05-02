@@ -71,7 +71,7 @@ const AddCar = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:1000/api/v1/car/add-car",
+        "https://cars-fp5h.onrender.com/api/v1/car/add-car",
         data,
         { headers }
       );
