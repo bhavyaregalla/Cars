@@ -6,11 +6,11 @@ import CarCard from "../components/carCard/carCard";
 
 const AllCars = () => {
   const [data, setData] = useState();
-  const [priceRange, setPriceRange] = useState([0, 100000]); // Price range state
+  const [priceRange, setPriceRange] = useState([0, 1000000]); // Price range state
   const [mileageRange, setMileageRange] = useState([0, 20000]); // Mileage range state
   const [filter, setFilter] = useState({ fuel: "", importType: "", transmission: "" }); // Dropdown filter state
   const MIN_PRICE = 0; // Minimum price
-  const MAX_PRICE = 100000; // Maximum price
+  const MAX_PRICE = 1000000; // Maximum price
   const MIN_MILEAGE = 0; // Minimum mileage
   const MAX_MILEAGE = 20000; // Maximum mileage 
 
