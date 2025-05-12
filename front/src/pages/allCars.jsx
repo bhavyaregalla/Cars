@@ -10,9 +10,9 @@ const AllCars = () => {
   const [mileageRange, setMileageRange] = useState([0, 200000]); // Mileage range state
   const [filter, setFilter] = useState({ fuel: "", importType: "", transmission: "" }); // Dropdown filter state
   const MIN_PRICE = 0; // Minimum price
-  const MAX_PRICE = 10000000; // Maximum price
+  const MAX_PRICE = 100000; // Maximum price
   const MIN_MILEAGE = 0; // Minimum mileage
-  const MAX_MILEAGE = 200000; // Maximum mileage 
+  const MAX_MILEAGE = 20000; // Maximum mileage 
 
   useEffect(() => {
     const fetch = async () => {
